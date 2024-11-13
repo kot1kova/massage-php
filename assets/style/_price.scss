@@ -1,0 +1,132 @@
+.price-page {
+  .hero {
+    margin-top: 78px;
+    &__wrapper {
+      padding: 26px 15px 47px 65px;
+      background-color: $green;
+      border-radius: $bor-40;
+      display: flex;
+    }
+    &__info {
+      max-width: 618px;
+      width: 100%;
+      color: $white;
+    }
+    &__text {
+      font-size: $fz-16;
+      line-height: 1.24;
+    }
+    &__img {
+      position: relative;
+      max-width: 363px;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__photo {
+      position: absolute;
+      top: -100px;
+      right: -30%;
+      z-index: 1;
+    }
+  }
+
+  .price {
+    margin-top: 73px;
+    &__wrapper {
+      margin-top: 40px;
+      display: flex;
+      gap: 24px;
+    }
+
+    &__menu {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    &__text {
+      font-size: $fz-16;
+      line-height: 1.24;
+      font-weight: $fw-700;
+    }
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: $fz-20-text;
+      font-weight: $fw-500;
+    }
+    &__time,
+    &__price {
+      width: 200px;
+      text-align: center;
+    }
+    &__title {
+      font-size: $fz-24-subtitle;
+      font-weight: $fw-700;
+    }
+    &__toggle {
+      padding: 24px 24px 24px 40px;
+      border-radius: $bor-20;
+      background-color: $grey;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: $fz-24;
+      font-weight: $fw-500;
+      transition: transform 0.4s ease;
+
+      svg {
+        border-radius: $bor-40;
+        background-color: $green-btn;
+        width: 44px;
+        height: 44px;
+        padding: 16px;
+        transition: 0.2 ease;
+        transition: transform 0.3s ease;
+      }
+    }
+
+    &__toggle:hover svg {
+      transition: 0.2 ease;
+      background-color: $green;
+    }
+    &__toggle.active svg {
+      transform: rotate(-180deg);
+      transition: transform 0.3s ease;
+    }
+
+    &__panel {
+      display: none;
+    }
+    &__panel.open {
+      margin-top: 16px;
+
+      padding: 0 10px;
+      display: block;
+    }
+    &__point {
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 0;
+      border-bottom: 1px solid $black;
+    }
+    &__right {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__hour {
+      width: 70px;
+      text-align: center;
+    }
+    &__cost {
+      width: 320px;
+
+      text-align: center;
+    }
+  }
+}

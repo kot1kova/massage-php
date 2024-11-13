@@ -1,0 +1,329 @@
+.services-page {
+	.hero {
+		margin-top: 68px;
+		&__inner {
+			display: flex;
+			gap: 24px;
+		}
+		&__wrapper {
+			display: flex;
+			flex-direction: column;
+			max-width: 690px;
+			width: 100%;
+			gap: 10px;
+		}
+		&__text {
+			font-size: $fz-24-hero;
+			line-height: 1.24;
+		}
+
+		&__photo {
+			border-radius: $bor-40;
+			max-width: 486px;
+			width: 100%;
+		}
+	}
+	.services {
+		margin-top: $mt-120;
+		&__wrapper {
+			margin-top: 40px;
+			display: grid;
+			//   grid-template-columns: 2fr, 3fr, 1fr, 2fr;
+			// grid-template-columns: minmax();
+			grid-template-columns: 282px 384px 180px 282px;
+			column-gap: 24px;
+		}
+		&__wrapper-two {
+			margin-top: 22px;
+			display: grid;
+			grid-template-columns: 282px 180px 384px 282px;
+			column-gap: 24px;
+		}
+		&__subtitle {
+			font-size: $fz-20-20;
+			font-weight: $fw-500;
+		}
+
+		&__item {
+			border-radius: $bor-20;
+			padding: 24px 32px 44px;
+		}
+		.long {
+			color: $white;
+			background-color: $green;
+		}
+		.short {
+			color: $black;
+			background-color: $green-light;
+		}
+		.photo {
+			height: fit-content;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: auto;
+		}
+		// &__item:nth-child(1) {
+		//   grid-column: 1 / 1;
+		//   grid-row: 1 / 1;
+		// }
+		// &__item:nth-child(2) {
+		//   grid-column: 2 / 2;
+		//   grid-row: 1 / 1;
+		// }
+		// &__item:nth-child(3) {
+		//   grid-column: 3 / 3;
+		//   grid-row: 1 / 2;
+		// }
+		// &__item:nth-child(4) {
+		//   grid-column: 4 / 4;
+		//   grid-row: 1 / 1;
+		// }
+
+		// &__item:nth-child(5) {
+		// 	grid-column: 1;
+		// 	grid-row: 2;
+		// }
+		// &__item:nth-child(6) {
+		// 	grid-column: 2;
+		// 	grid-row: 2;
+		// }
+		// &__item:nth-child(7) {
+		// 	grid-column: 3;
+		// 	grid-row: 2;
+		// }
+		// &__item:nth-child(8) {
+		// 	grid-column: 4;
+		// 	grid-row: 2;
+		// }
+	}
+	.banner {
+		margin-top: 80px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 483px;
+		&::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			//   height: 100%;
+			height: 483px;
+			background: rgba(18, 25, 52, 0.4);
+		}
+		&__inner {
+			padding: 94px;
+		}
+		&__wrapper {
+			max-width: 587px;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			z-index: 1;
+			color: $white;
+		}
+		// &__btn {
+		//   svg {
+		//     position: absolute;
+		//     top: 45%;
+		//     right: 10%;
+		//     fill: $white;
+		//     background: $green-btn;
+		//     border-radius: 40px;
+		//     width: 80px;
+		//     height: 80px;
+		//     padding: 30px;
+		//     transform: rotate(-45deg);
+		//     transition: 0.2s ease;
+		//     // transform: translate(0, 0);
+		//     &:hover {
+		//       transition: 0.2s ease;
+		//       background-color: #176763;
+		//       transform: translate(5px, 0);
+		//       transition: transform 0.2s ease, fill 0.2s ease;
+		//     }
+		//   }
+		// }
+		&__btn {
+			margin-left: auto;
+			margin-top: -90px;
+			transform: rotate(-45deg);
+			width: 80px;
+			height: 80px;
+			border-radius: 40px;
+			background-color: $green-btn;
+			padding: 30px;
+			transition: 0.2s ease;
+			svg {
+				width: 20px;
+				height: 20px;
+				fill: $white;
+				transition: 0.2s ease;
+				transform: translate(0, 0);
+			}
+			&:hover {
+				transition: 0.2s ease;
+				background-color: $green;
+				svg {
+					// fill: $green;
+					transform: translate(5px, 0);
+					transition: transform 0.2s ease, fill 0.2s ease;
+				}
+			}
+		}
+	}
+	.benefits {
+		margin-top: 80px;
+		&__wrapper {
+			margin-top: 40px;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 24px;
+		}
+		&__item {
+			display: flex;
+			flex-direction: column;
+			gap: 24px;
+		}
+		&__img {
+			width: 72px;
+			height: 72px;
+		}
+
+		&__subtitle {
+			font-size: $fz-24-24;
+			font-weight: $fw-600;
+		}
+		&__text {
+			margin-top: 8px;
+			font-size: $fz-16;
+		}
+	}
+	.person {
+		margin-top: $mt-120;
+		&__wrapper {
+			margin-top: 40px;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 31px;
+		}
+		&__item {
+			padding: 22px 10px 44px 10px;
+			border-radius: $bor-20;
+			background-color: $light;
+		}
+		&__img {
+			max-width: 355px;
+			width: 100%;
+			border-radius: $bor-20;
+		}
+		&__info {
+			margin-top: 20px;
+		}
+		&__name {
+			font-size: $fz-32;
+			font-weight: $fw-600;
+		}
+		&__prof {
+			margin-top: 16px;
+			font-size: $fz-20-text;
+			font-weight: $fw-500;
+		}
+		&__exp {
+			margin-top: 8px;
+		}
+		&__text {
+			font-size: $fz-16;
+		}
+		&__btn {
+			margin-top: -60px;
+			margin-left: auto;
+			transform: rotate(-45deg);
+			width: 60px;
+			height: 60px;
+			border-radius: $bor-40;
+			background-color: $green-btn;
+			padding: 20px 21px;
+			transition: 0.2s ease;
+			svg {
+				width: 20px;
+				height: 20px;
+				fill: $white;
+				transition: 0.2s ease;
+				transform: translate(0, 0);
+			}
+			&:hover {
+				transition: 0.2s ease;
+				background-color: $green;
+				svg {
+					// fill: $green;
+					transform: translate(5px, 0);
+					transition: transform 0.2s ease, fill 0.2s ease;
+				}
+			}
+		}
+	}
+	.prices {
+		margin-top: $mt-120;
+		&__top {
+			max-width: 466px;
+			width: 100%;
+			margin-bottom: -60px;
+		}
+		.swiper-slide {
+			margin-top: 40px;
+			// width: 282px;
+			height: 190px;
+		}
+
+		&__links {
+			padding: 14px 20px;
+			position: relative;
+			display: block;
+			max-width: 100%;
+			height: 100%;
+		}
+
+		&__block {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			fill: $green;
+		}
+
+		&__btns {
+			border-radius: $bor-20;
+			padding: 7px;
+			max-width: 71px;
+			width: 100%;
+			display: flex;
+			background-color: $green-btn;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+		&__btn {
+			margin-left: auto;
+			width: 12px;
+			height: 11px;
+		}
+		&__info {
+			max-width: 170px;
+			width: 100%;
+		}
+		&__subtitle {
+			font-weight: $fw-600;
+			font-size: $fz-24-24;
+			color: $white;
+		}
+		&__text {
+			margin-top: 5px;
+			font-weight: $fw-400;
+			color: $white;
+		}
+	}
+}

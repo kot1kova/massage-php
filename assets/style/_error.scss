@@ -1,0 +1,41 @@
+.error-page {
+	.error {
+		&__inner {
+			height: 80vh;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 80px;
+		}
+		&__title {
+			font-family: $ff-onest;
+			font-weight: $fw-900;
+			font-size: $fz-64-404;
+		}
+		&__img {
+			max-width: 695px;
+			width: 100%;
+		}
+		&__link {
+			border-radius: $bor-40;
+			padding: 10px 25px 10px 12px;
+			background-color: $green-btn;
+			font-size: $fz-20-text;
+			font-weight: $fw-500;
+			color: $white;
+			width: fit-content;
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			svg {
+				border-radius: $bor-40;
+				width: 44px;
+				height: 44px;
+				padding: 16px;
+				background-color: $white;
+			}
+		}
+	}
+}
